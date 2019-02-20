@@ -1,0 +1,57 @@
+			/* This is CSS commnet method. */
+			body { 
+				font-family: Courier;
+				background : #333;
+				color : #fff;
+			 }
+			p {
+				color : skyblue;
+				font-family : a장미다방;
+			}
+
+			h1{
+				font-family: a장미다방;	
+				color : pink;
+			}
+
+			p,h1 { 
+		/*	text-decoration: line-through; */
+		}
+			ul{
+				background: orange;
+			}
+
+			ul li {
+				background: purple;
+			}
+			section ul{
+				background: yellow;
+			}
+			section ul li {
+				background: #00ffc6;
+			}
+			/*Hyper link*/
+			/*pseudo selector*/
+
+			a:link {
+				color: red;
+				text-decoration: none;
+			}
+
+			a:visited {
+				color:green;
+			}
+
+			a:hover{
+				color :pink;
+				text-decoration: underline;
+			}
+
+			a:active {
+				color :white;
+			}
+
+			p a : link {
+				color: purple;
+				font-size: 40px; 
+			}
