@@ -1,0 +1,121 @@
+/* reset any margins or paddings that the browser might be forcing. */
+            * {
+              margin: 0;
+              padding: 0;  
+            }  
+            /* reference : 
+            - google font
+            - onlinefontconverter
+            - https://www.1001freefonts.com/
+            */
+
+            @font-face{
+                font-family: tsd;
+                src : url(TwistedSystemDEMO.otf);
+            }
+            @font-face{
+                font-family: oj;
+                src : url(orangejuice.ttf);
+            }
+            body {
+                background: #222;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 1em;
+                line-height: 2em;
+                letter-spacing: 0.2em;
+                word-spacing: 0.5em;
+            }
+            header {
+                /*height: 70vh;*/
+                display: none;
+
+            }
+            header, footer { background: orange; }
+
+            /* default CSS
+							 width: 320px - mobile portrait
+						*/
+            .col {
+                 float: left; 
+                 padding: 2%;
+            }
+            .col1 {
+                background: purple;
+                color: white;
+            }
+
+            .col2 {
+                background: aqua;
+                font-family: tsd;
+                font-size:2em;
+               /* font-size : 0.8em; --> 12px*/
+            }
+
+            .col3 {
+                background: pink;
+                font-family: Indie flower;
+                font-size : 20px;
+            }
+
+            .wrapper {
+                background: #444;
+            }
+
+            .clearfix {
+                clear: both; /* clear previous floats */
+            }
+
+            .module {
+                background: silver;
+            }
+                      .cta {
+                    font-size: 4em;
+                    padding: 2%;
+                    font-family: oj;
+                }
+
+						/* generic mobile portrait size */
+            @media screen and (min-width: 480px) {
+                header { 
+                    background: red;
+                    height: 400px;
+                }
+                .col1, .col2 {
+                    width: 46%;
+                
+                }
+
+            }
+
+            /* ipad portrait or small desktop - 1024px width */
+            @media screen and (min-width: 1024px) {
+                header {
+                    display: block; 
+                    background: green;
+                }
+                .col1{
+                    width: 16%;
+                    
+                }
+                .col2 {
+                    width: 46%;
+                   
+                }
+                .col3 {
+                    width: 26%;
+               
+                }
+                .wrapper {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+
+
+            }
+
+            /* for (current) standard desktop size - 1920px x 1080px */
+            @media screen and (min-width: 1900px) {
+                body {
+                    background: white;
+                }                
+            }
