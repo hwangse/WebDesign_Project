@@ -40,14 +40,18 @@
                  padding: 2%;
             }
             .col1 {
-                background: purple;
+                /*background: purple;
+                */
                 color: white;
+                background: rgb(255,0,0,0.3);
             }
 
             .col2 {
-                background: aqua;
+               /* background: aqua;
+                */
                 font-family: tsd;
                 font-size:2em;
+                 background: rgb(255,0,0,0.5);
                /* font-size : 0.8em; --> 12px*/
             }
 
@@ -58,7 +62,9 @@
             }
 
             .wrapper {
-                background: #444;
+                /*background: #444;
+                */
+                background: rgb(255,0,0,0.8);
             }
 
             .clearfix {
@@ -67,6 +73,7 @@
 
             .module {
                 background: silver;
+                background: rgb(255,255,255);
             }
                       .cta {
                     font-size: 4em;
