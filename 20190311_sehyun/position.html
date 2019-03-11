@@ -68,20 +68,33 @@
 	  /* NAVIGATION */
 	  /* Main Nav */
 	  nav {
-	  	background : white;
-	  	height : 40px;
+	  	padding : 10px 50px;
 	  }
-
-	  nav ul li {
-	  	color : orange;
-	  	width : 100px;
-	  	background: silver;
-	  	float : left;
-	  }
-
 	  nav ul {
 	  	list-style: none;
+	  	margin :0 20px 0 20px;
 	  }
+	  nav ul a li {
+	  	color : #222;
+	  	width : 25%;
+	  	background: silver;
+	  	float : left;
+	
+	  	text-align: center;
+	  	padding : 5px 0;
+	  
+	  }
+	  nav ul a li:hover{
+	  	background: #333;
+	  	color : white;
+	  }
+	 
+	 nav ul a li ul  {
+	 	background: red;
+	 }
+	 nav ul a li ul li {
+	 	background: blue;
+	 }
 	
 	</style>
 </head>
@@ -89,13 +102,20 @@
 
 	<nav>
 		<ul> 
-			<li>Home</li>
-			<li>About Us</li>
-			<li>Gallery</li>
-			<li>Contact</li>
+			<a href=""><li>Home</li></a>
+			<a href=""><li>About Us</li>
+			<a href=""><li>Gallery
+
+				<ul>
+					<li>LandScape</li>
+					<li>Portraits</li>
+				</ul>
+
+			</li></a>
+			<a href="https://www.google.com/maps/?hl=ko" target="_blank"><li>Contact</li></a>
 		</ul>
 	</nav>
-	
+
 
 <!--
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sit ullam ipsa voluptate modi quaerat ad enim illum temporibus porro quo facere vero expedita natus dolor est, impedit id repellat.This is a normal paragraph which are using. Nothing special about it. Just some random text which the sake of demonstration. Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text </p>
