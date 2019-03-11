@@ -9,6 +9,7 @@
 		}
 		body{
 			background: #222;
+			color: white;
 		}
 		p { 
     	background: orange;
@@ -68,11 +69,11 @@
 	  /* NAVIGATION */
 	  /* Main Nav */
 	  nav {
-	  	padding : 10px 50px;
+	  	padding : 100px 50px 10px 50px;
 	  }
 	  nav ul {
 	  	list-style: none;
-	  	margin :0 20px 0 20px;
+
 	  }
 	  nav ul a li {
 	  	color : #222;
@@ -90,20 +91,51 @@
 	  }
 	 
 	 nav ul a li ul  {
-	 	background: red;
+	 
+	 	width: 100%;
+	 	display:none; 
 	 }
 	 nav ul a li ul li {
 	 	background: blue;
+	 	color: white;
+	 	width: 100%;
 	 }
-	
+
+	 nav ul a li ul li:hover{
+	 	background: green;
+	 }
+
+	 /* DROPDOWN STUFF */
+	 nav ul a li ul {
+	 	position : relative;
+	 	top :5px;
+	 	left : 0;
+	 }
+	 nav ul a li:hover ul{
+	 	display:block;
+	 }
+
 	</style>
 </head>
 <body>
 
 	<nav>
 		<ul> 
-			<a href=""><li>Home</li></a>
-			<a href=""><li>About Us</li>
+			<a href=""><li>Home
+				<ul>
+					<li>home1</li>
+					<li>home2</li>
+					<li>home3</li>
+				</ul>
+			</li></a>
+			<a href=""><li>About Us
+				<ul>
+					<li>blahblah</li>
+					<li>blahblah</li>
+					<li>blahblah</li>
+					<li>blahblah</li>
+				</ul>
+			</li></a>
 			<a href=""><li>Gallery
 
 				<ul>
@@ -112,7 +144,7 @@
 				</ul>
 
 			</li></a>
-			<a href="https://www.google.com/maps/?hl=ko" target="_blank"><li>Contact</li></a>
+			<a href="https://www.google.com/maps/?hl=ko" target="_blank"><li>Contact Us</li></a>
 		</ul>
 	</nav>
 
