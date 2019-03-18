@@ -1,10 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--
+[JQuery Example Plugin ]
+*flexslider
+*metafizzy
+*turn Js
+*light box
+-->
 <html>
 	<head>
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>JQuery & Transitions</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" href="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" href="js/lightbox.js"></script>
+
 	</head>
 	<body>
 
@@ -21,11 +33,23 @@
 		  </section>
 
 		  <section class="module"> 
-		  	<h2>Another Module of stuff</h2>
+		  	<h2>JQuery with Lightbox</h2>
+		  	<a href="images/thisThat.jpg" data-lightbox="This &amp; That" data-title="This &amp; That "><img src="images/thisThat.jpg" alt="This &amp; That "></a>
+
+	  		<a href="images/this.jpg" data-lightbox="This" data-title="This "><img src="images/this.jpg" alt="This "></a>
+
+
 		  </section>
 
 		</section>
 	</body>
+
+	<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 
 
 </html>
