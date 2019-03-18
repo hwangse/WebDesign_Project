@@ -53,10 +53,17 @@ body {
 	opacity: 0.5;
 	*/
 }
+#gallery img[src$="this.jpg"]{
+	transform-origin: top left;
+}
+#gallery img[src$="that.jpg"]{
+	transform-origin: top right;
+}
 #gallery img:hover{
+	/*
 	transform: translate(100px 50px);
 	transform : rotate(30deg);
-	/*opacity: 0;*/
+	opacity: 0;*/
 	transform: scale(2);
 
 }
