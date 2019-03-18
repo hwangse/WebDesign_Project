@@ -39,6 +39,31 @@ body {
 
 #gallery img {
 	width: 100%;
+
+	-webkit-transition: linear 3s;	/*safari & google*/
+	-moz-transition: linear 3s;	
+	-ms-transition: linear 3s;		/* microsoft */
+	-o-transition: linear 3s;
+	transition: linear 3s;
+/*
+	-webkit-opacity:0.5;
+	-moz-opacity:0.5;
+	-ms-opacity:0.5;
+	-o-opacity:0.5;
+	opacity: 0.5;
+	*/
+}
+#gallery img:hover{
+	transform: translate(100px 50px);
+	transform : rotate(30deg);
+	/*opacity: 0;*/
+	transform: scale(2);
+
+}
+
+#gallery:hover{
+	/*transform : rotate(30deg);
+	*/
 }
 h1{
 	-webkit-transition: linear 3s;	/*safari & google*/
@@ -48,7 +73,8 @@ h1{
 	transition: linear 3s;
 }
 h1:hover{
-	transform:;
+	transform:scale(1.5);
+
 }
 
 p { margin-bottom: 20px; }
